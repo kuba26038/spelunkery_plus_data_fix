@@ -2,9 +2,13 @@ plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
+
+
 
 version = mod_version
 group = mod_group_id
@@ -121,6 +125,17 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+    maven { url "https://maven.minecraftforge.net" }
+    maven {
+        url = "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven { url "https://dvs1.progwml6.com/files/maven/" } // JEI
+    maven { url "https://maven.blamejared.com/" }
+    maven { url "https://modmaven.dev" }
+    flatDir { dirs 'libs' }
 }
 
 dependencies {
@@ -130,7 +145,6 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
@@ -145,6 +159,15 @@ dependencies {
     // For more info:
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+    implementation fg.deobf("curse.maven:embeddium-908741:5681725")
+    implementation fg.deobf("curse.maven:magnesium-extras-558905:6041697")
+    implementation fg.deobf("curse.maven:geckolib-388172:6658942")
+    implementation fg.deobf("curse.maven:citadel-331936:5075402")
+    implementation fg.deobf("curse.maven:ice-and-fire-dragons-264231:5122408")
+
+    implementation     fg.deobf("curse.maven:jei-238222:6600311")
+    implementation     fg.deobf("curse.maven:selene-499980:6740431")
+    implementation     fg.deobf("curse.maven:spelunkery-790530:6122072")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -200,6 +223,7 @@ publishing {
         maven {
             url "file://${project.projectDir}/mcmodsrepo"
         }
+
     }
 }
 
