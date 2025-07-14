@@ -26,6 +26,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.tysontheember.spelunkeryplus.block.ModBlocks;
 import net.tysontheember.spelunkeryplus.item.ModItems;
 import org.slf4j.Logger;
 
@@ -43,6 +44,7 @@ public class SpelunkeryPlus
         IEventBus modEventBus = context.getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -69,6 +71,9 @@ public class SpelunkeryPlus
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.ROUGH_SAPPHIRE);
+            event.accept(ModItems.ROUGH_SAPPHIRE_SHARD);
+            event.accept(ModItems.SAPPHIRE_SHARD);
+            event.accept(ModBlocks.ROUGH_SAPPHIRE_BLOCK);
         }
 
     }

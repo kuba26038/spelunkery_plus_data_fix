@@ -1,0 +1,28 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "iceandfire"
+        }
+      ],
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "spelunkeryplus:rough_sapphire"
+        }
+      },
+      "result": {
+        "item": "spelunkeryplus:rough_sapphire_block"
+      }
+    }
+  ]
+}
