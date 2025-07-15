@@ -1,0 +1,29 @@
+{
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "iceandfire",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "iceandfire:sapphire_gem"
+    }
+  ],
+  "results": [
+    {
+      "item": "spelunkeryplus:rough_sapphire_shard",
+      "count": 4
+    },
+    {
+      "item": "spelunkeryplus:rough_sapphire_shard",
+      "chance": 0.25
+    }
+  ],
+  "processingTime": 350
+}

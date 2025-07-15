@@ -1,28 +1,23 @@
 {
-  "type": "forge:conditional",
-  "recipes": [
+  "conditions": [
     {
-      "conditions": [
-        {
-          "type": "forge:mod_loaded",
-          "modid": "iceandfire"
-        }
-      ],
-      "type": "minecraft:crafting_shaped",
-      "category": "misc",
-      "pattern": [
-        "###",
-        "###",
-        "###"
-      ],
-      "key": {
-        "#": {
-          "item": "spelunkeryplus:rough_sapphire_shard"
-        }
-      },
-      "result": {
-        "item": "spelunkeryplus:rough_sapphire"
-      }
+      "modid": "iceandfire",
+      "type": "forge:mod_loaded"
     }
-  ]
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "spelunkeryplus:rough_sapphire_shard"
+    }
+  },
+  "result": {
+    "item": "spelunkeryplus:rough_sapphire"
+  }
 }

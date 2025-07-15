@@ -164,6 +164,7 @@ dependencies {
     implementation fg.deobf("curse.maven:geckolib-388172:6658942")
     implementation fg.deobf("curse.maven:citadel-331936:5075402")
     implementation fg.deobf("curse.maven:ice-and-fire-dragons-264231:5122408")
+    implementation fg.deobf("curse.maven:create-328085:6641603")
 
     implementation     fg.deobf("curse.maven:jei-238222:6600311")
     implementation     fg.deobf("curse.maven:selene-499980:6740431")

@@ -1,15 +1,22 @@
 {
+  "conditions": [
+    {
+      "modid": "iceandfire",
+      "type": "forge:mod_loaded"
+    }
+  ],
   "type": "minecraft:block",
   "pools": [
     {
       "rolls": 1,
-      "name": "sapphire_ore",
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
+              "name": "spelunkery:andesite_zinc_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -24,12 +31,11 @@
                     ]
                   }
                 }
-              ],
-              "name": "iceandfire:sapphire_ore"
+              ]
             },
             {
               "type": "minecraft:item",
-              "name": "spelunkeryplus:rough_sapphirez`",
+              "name": "spelunkeryplus:rough_sapphire",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",
