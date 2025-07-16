@@ -72,6 +72,11 @@ public class SpelunkeryPlus
             event.accept(ModItems.ROUGH_SAPPHIRE_SHARD);
             event.accept(ModItems.SAPPHIRE_SHARD);
             event.accept(ModBlocks.ROUGH_SAPPHIRE_BLOCK);
+            event.accept(ModBlocks.DIORITE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.ANDESITE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.TUFF_SAPPHIRE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.GRANITE_SAPPHIRE_ORE);
         }
 
     }
