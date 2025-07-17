@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "spelunking_master:block/granite_fire_ruby_ore"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "spelunking_master:block/raw_ice_sapphire_block"
-  }
-}

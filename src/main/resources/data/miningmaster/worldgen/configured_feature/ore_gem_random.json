@@ -10,55 +10,55 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:granite_ice_sapphire_ore"
+              "Name": "spelunkeryplus:mm_granite_ice_sapphire_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:granite_spirit_garnet_ore"
+              "Name": "spelunkeryplus:mm_granite_spirit_garnet_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:granite_dive_aquamarine_ore"
+              "Name": "spelunkeryplus:mm_granite_dive_aquamarine_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:granite_divine_beryl_ore"
+              "Name": "spelunkeryplus:mm_granite_divine_beryl_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:granite_spider_kunzite_ore"
+              "Name": "spelunkeryplus:mm_granite_spider_kunzite_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:granite_fire_ruby_ore"
+              "Name": "spelunkeryplus:mm_granite_fire_ruby_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:granite_haste_peridot_ore"
+              "Name": "spelunkeryplus:mm_granite_haste_peridot_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:granite_lucky_citrine_ore"
+              "Name": "spelunkeryplus:mm_granite_lucky_citrine_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:granite_unbreaking_iolite_ore"
+              "Name": "spelunkeryplus:mm_granite_unbreaking_iolite_ore"
             },
             "weight": 1
           }
@@ -72,55 +72,55 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:andesite_ice_sapphire_ore"
+              "Name": "spelunkeryplus:mm_andesite_ice_sapphire_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:andesite_spirit_garnet_ore"
+              "Name": "spelunkeryplus:mm_andesite_spirit_garnet_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:andesite_dive_aquamarine_ore"
+              "Name": "spelunkeryplus:mm_andesite_dive_aquamarine_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:andesite_divine_beryl_ore"
+              "Name": "spelunkeryplus:mm_andesite_divine_beryl_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:andesite_spider_kunzite_ore"
+              "Name": "spelunkeryplus:mm_andesite_spider_kunzite_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:andesite_fire_ruby_ore"
+              "Name": "spelunkeryplus:mm_andesite_fire_ruby_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:andesite_haste_peridot_ore"
+              "Name": "spelunkeryplus:mm_andesite_haste_peridot_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:andesite_lucky_citrine_ore"
+              "Name": "spelunkeryplus:mm_andesite_lucky_citrine_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:andesite_unbreaking_iolite_ore"
+              "Name": "spelunkeryplus:mm_andesite_unbreaking_iolite_ore"
             },
             "weight": 1
           }
@@ -134,55 +134,55 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:diorite_ice_sapphire_ore"
+              "Name": "spelunkeryplus:mm_diorite_ice_sapphire_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:diorite_spirit_garnet_ore"
+              "Name": "spelunkeryplus:mm_diorite_spirit_garnet_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:diorite_dive_aquamarine_ore"
+              "Name": "spelunkeryplus:mm_diorite_dive_aquamarine_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:diorite_divine_beryl_ore"
+              "Name": "spelunkeryplus:mm_diorite_divine_beryl_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:diorite_spider_kunzite_ore"
+              "Name": "spelunkeryplus:mm_diorite_spider_kunzite_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:diorite_fire_ruby_ore"
+              "Name": "spelunkeryplus:mm_diorite_fire_ruby_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:diorite_haste_peridot_ore"
+              "Name": "spelunkeryplus:mm_diorite_haste_peridot_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:diorite_lucky_citrine_ore"
+              "Name": "spelunkeryplus:mm_diorite_lucky_citrine_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:diorite_unbreaking_iolite_ore"
+              "Name": "spelunkeryplus:mm_diorite_unbreaking_iolite_ore"
             },
             "weight": 1
           }
@@ -196,55 +196,55 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:tuff_ice_sapphire_ore"
+              "Name": "spelunkeryplus:mm_tuff_ice_sapphire_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:tuff_spirit_garnet_ore"
+              "Name": "spelunkeryplus:mm_tuff_spirit_garnet_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:tuff_dive_aquamarine_ore"
+              "Name": "spelunkeryplus:mm_tuff_dive_aquamarine_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:tuff_divine_beryl_ore"
+              "Name": "spelunkeryplus:mm_tuff_divine_beryl_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:tuff_spider_kunzite_ore"
+              "Name": "spelunkeryplus:mm_tuff_spider_kunzite_ore"
             },
             "weight": 2
           },
           {
             "state": {
-              "Name": "spelunking_master:tuff_fire_ruby_ore"
+              "Name": "spelunkeryplus:mm_tuff_fire_ruby_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:tuff_haste_peridot_ore"
+              "Name": "spelunkeryplus:mm_tuff_haste_peridot_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:tuff_lucky_citrine_ore"
+              "Name": "spelunkeryplus:mm_tuff_lucky_citrine_ore"
             },
             "weight": 1
           },
           {
             "state": {
-              "Name": "spelunking_master:tuff_unbreaking_iolite_ore"
+              "Name": "spelunkeryplus:mm_tuff_unbreaking_iolite_ore"
             },
             "weight": 1
           }

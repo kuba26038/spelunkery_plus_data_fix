@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "spelunking_master:item/raw_divine_beryl"
-  }
-}

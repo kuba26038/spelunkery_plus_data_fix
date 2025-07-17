@@ -168,7 +168,10 @@ dependencies {
 
     implementation fg.deobf("curse.maven:world-stripper-250603:4578579")
 
+    implementation fg.deobf("curse.maven:mining-master-534956:5540513")
+
     implementation     fg.deobf("curse.maven:jei-238222:6600311")
+    implementation     fg.deobf("curse.maven:emi-580555:6420945")
     implementation     fg.deobf("curse.maven:selene-499980:6740431")
     implementation     fg.deobf("curse.maven:spelunkery-790530:6122072")
 }

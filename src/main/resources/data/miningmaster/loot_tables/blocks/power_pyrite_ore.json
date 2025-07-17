@@ -33,7 +33,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "spelunking_master:raw_power_pyrite"
+              "name": "spelunkeryplus:mm_raw_power_pyrite"
             }
           ]
         }

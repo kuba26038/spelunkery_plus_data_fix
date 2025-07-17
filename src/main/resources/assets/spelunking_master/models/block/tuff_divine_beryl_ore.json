@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "spelunking_master:block/tuff_divine_beryl_ore"
-  }
-}

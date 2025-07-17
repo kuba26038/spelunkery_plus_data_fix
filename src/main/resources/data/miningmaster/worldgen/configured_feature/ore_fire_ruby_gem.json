@@ -10,7 +10,7 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:granite_fire_ruby_ore"
+              "Name": "spelunkeryplus:mm_granite_fire_ruby_ore"
             }
           }
         ]
@@ -23,7 +23,7 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:andesite_fire_ruby_ore"
+              "Name": "spelunkeryplus:mm_andesite_fire_ruby_ore"
             }
           }
         ]
@@ -36,7 +36,7 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:diorite_fire_ruby_ore"
+              "Name": "spelunkeryplus:mm_diorite_fire_ruby_ore"
             }
           }
         ]
@@ -49,7 +49,7 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:tuff_fire_ruby_ore"
+              "Name": "spelunkeryplus:mm_tuff_fire_ruby_ore"
             }
           }
         ]

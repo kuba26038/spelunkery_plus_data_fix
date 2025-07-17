@@ -68,15 +68,85 @@ public class SpelunkeryPlus
     {
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+
             event.accept(ModItems.ROUGH_SAPPHIRE);
             event.accept(ModItems.ROUGH_SAPPHIRE_SHARD);
             event.accept(ModItems.SAPPHIRE_SHARD);
             event.accept(ModBlocks.ROUGH_SAPPHIRE_BLOCK);
-            event.accept(ModBlocks.DIORITE_SAPPHIRE_ORE);
-            event.accept(ModBlocks.ANDESITE_SAPPHIRE_ORE);
-            event.accept(ModBlocks.TUFF_SAPPHIRE_ORE);
-            event.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
-            event.accept(ModBlocks.GRANITE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.IAF_TUFF_SAPPHIRE_ORE);
+            event.accept(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.IAF_GRANITE_SAPPHIRE_ORE);
+
+            event.accept(ModBlocks.MM_RAW_AIR_MALACHITE_BLOCK);
+            event.accept(ModBlocks.MM_RAW_DIVE_AQUAMARINE_BLOCK);
+            event.accept(ModBlocks.MM_RAW_DIVINE_BERYL_BLOCK);
+            event.accept(ModBlocks.MM_RAW_FIRE_RUBY_BLOCK);
+            event.accept(ModBlocks.MM_RAW_HASTE_PERIDOT_BLOCK);
+            event.accept(ModBlocks.MM_RAW_HEART_RHODONITE_BLOCK);
+            event.accept(ModBlocks.MM_RAW_ICE_SAPPHIRE_BLOCK);
+            event.accept(ModBlocks.MM_RAW_KINETIC_OPAL_BLOCK);
+            event.accept(ModBlocks.MM_RAW_LUCKY_CITRINE_BLOCK);
+            event.accept(ModBlocks.MM_RAW_POWER_PYRITE_BLOCK);
+            event.accept(ModBlocks.MM_RAW_SPIDER_KUNZITE_BLOCK);
+            event.accept(ModBlocks.MM_RAW_SPIRIT_GARNET_BLOCK);
+            event.accept(ModBlocks.MM_RAW_UNBREAKING_IOLITE_BLOCK);
+
+            event.accept(ModItems.MM_RAW_AIR_MALACHITE);
+            event.accept(ModItems.MM_RAW_DIVE_AQUAMARINE);
+            event.accept(ModItems.MM_RAW_DIVINE_BERYL);
+            event.accept(ModItems.MM_RAW_FIRE_RUBY);
+            event.accept(ModItems.MM_RAW_HASTE_PERIDOT);
+            event.accept(ModItems.MM_RAW_HEART_RHODONITE);
+            event.accept(ModItems.MM_RAW_ICE_SAPPHIRE);
+            event.accept(ModItems.MM_RAW_KINETIC_OPAL);
+            event.accept(ModItems.MM_RAW_LUCKY_CITRINE);
+            event.accept(ModItems.MM_RAW_POWER_PYRITE);
+            event.accept(ModItems.MM_RAW_SPIDER_KUNZITE);
+            event.accept(ModItems.MM_RAW_SPIRIT_GARNET);
+            event.accept(ModItems.MM_RAW_UNBREAKING_IOLITE);
+            //Andesite
+            event.accept(ModBlocks.MM_ANDESITE_DIVE_AQUAMARINE_ORE);
+            event.accept(ModBlocks.MM_ANDESITE_DIVINE_BERYL_ORE);
+            event.accept(ModBlocks.MM_ANDESITE_FIRE_RUBY_ORE);
+            event.accept(ModBlocks.MM_ANDESITE_HASTE_PERIDOT_ORE);
+            event.accept(ModBlocks.MM_ANDESITE_ICE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.MM_ANDESITE_LUCKY_CITRINE_ORE);
+            event.accept(ModBlocks.MM_ANDESITE_SPIDER_KUNZITE_ORE);
+            event.accept(ModBlocks.MM_ANDESITE_SPIRIT_GARNET_ORE);
+            event.accept(ModBlocks.MM_ANDESITE_UNBREAKING_IOLITE_ORE);
+            //Diorite
+            event.accept(ModBlocks.MM_DIORITE_DIVE_AQUAMARINE_ORE);
+            event.accept(ModBlocks.MM_DIORITE_DIVINE_BERYL_ORE);
+            event.accept(ModBlocks.MM_DIORITE_FIRE_RUBY_ORE);
+            event.accept(ModBlocks.MM_DIORITE_HASTE_PERIDOT_ORE);
+            event.accept(ModBlocks.MM_DIORITE_ICE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.MM_DIORITE_LUCKY_CITRINE_ORE);
+            event.accept(ModBlocks.MM_DIORITE_SPIDER_KUNZITE_ORE);
+            event.accept(ModBlocks.MM_DIORITE_SPIRIT_GARNET_ORE);
+            event.accept(ModBlocks.MM_DIORITE_UNBREAKING_IOLITE_ORE);
+            //Granite
+            event.accept(ModBlocks.MM_GRANITE_DIVE_AQUAMARINE_ORE);
+            event.accept(ModBlocks.MM_GRANITE_DIVINE_BERYL_ORE);
+            event.accept(ModBlocks.MM_GRANITE_FIRE_RUBY_ORE);
+            event.accept(ModBlocks.MM_GRANITE_HASTE_PERIDOT_ORE);
+            event.accept(ModBlocks.MM_GRANITE_ICE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.MM_GRANITE_LUCKY_CITRINE_ORE);
+            event.accept(ModBlocks.MM_GRANITE_SPIDER_KUNZITE_ORE);
+            event.accept(ModBlocks.MM_GRANITE_SPIRIT_GARNET_ORE);
+            event.accept(ModBlocks.MM_GRANITE_UNBREAKING_IOLITE_ORE);
+            //Tuff
+            event.accept(ModBlocks.MM_TUFF_DIVE_AQUAMARINE_ORE);
+            event.accept(ModBlocks.MM_TUFF_DIVINE_BERYL_ORE);
+            event.accept(ModBlocks.MM_TUFF_FIRE_RUBY_ORE);
+            event.accept(ModBlocks.MM_TUFF_HASTE_PERIDOT_ORE);
+            event.accept(ModBlocks.MM_TUFF_ICE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.MM_TUFF_LUCKY_CITRINE_ORE);
+            event.accept(ModBlocks.MM_TUFF_SPIDER_KUNZITE_ORE);
+            event.accept(ModBlocks.MM_TUFF_SPIRIT_GARNET_ORE);
+            event.accept(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE);
+
         }
 
     }

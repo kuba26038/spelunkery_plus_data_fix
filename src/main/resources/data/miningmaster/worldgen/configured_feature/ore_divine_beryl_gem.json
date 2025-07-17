@@ -10,7 +10,7 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:granite_divine_beryl_ore"
+              "Name": "spelunkeryplus:mm_granite_divine_beryl_ore"
             }
           }
         ]
@@ -23,7 +23,7 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:andesite_divine_beryl_ore"
+              "Name": "spelunkeryplus:mm_andesite_divine_beryl_ore"
             }
           }
         ]
@@ -36,7 +36,7 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:diorite_divine_beryl_ore"
+              "Name": "spelunkeryplus:mm_diorite_divine_beryl_ore"
             }
           }
         ]
@@ -49,7 +49,7 @@
         "states": [
           {
             "state": {
-              "Name": "spelunking_master:tuff_divine_beryl_ore"
+              "Name": "spelunkeryplus:mm_tuff_divine_beryl_ore"
             }
           }
         ]

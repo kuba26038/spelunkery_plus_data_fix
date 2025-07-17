@@ -33,7 +33,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "spelunking_master:raw_fire_ruby"
+              "name": "spelunkeryplus:mm_raw_fire_ruby"
             }
           ]
         }
