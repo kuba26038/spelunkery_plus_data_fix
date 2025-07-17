@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "spelunking_master:block/raw_power_pyrite_block"
+  }
+}

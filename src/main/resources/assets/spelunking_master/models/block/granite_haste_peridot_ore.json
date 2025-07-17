@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "spelunking_master:block/granite_haste_peridot_ore"
+  }
+}

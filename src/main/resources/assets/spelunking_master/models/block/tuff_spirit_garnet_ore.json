@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "spelunking_master:block/tuff_spirit_garnet_ore"
+  }
+}
