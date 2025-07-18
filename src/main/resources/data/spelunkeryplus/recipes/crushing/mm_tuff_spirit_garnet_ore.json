@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "miningmaster",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "spelunkeryplus:mm_tuff_spirit_garnet_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "spelunkeryplus:mm_raw_spirit_garnet"
+    },
+    {
+      "item": "spelunkeryplus:mm_raw_spirit_garnet",
+      "chance": 0.75
+    },
+    {
+      "item": "create:experience_nugget",
+      "chance": 0.75
+    },
+    {
+      "item": "minecraft:tuff",
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 350
+}

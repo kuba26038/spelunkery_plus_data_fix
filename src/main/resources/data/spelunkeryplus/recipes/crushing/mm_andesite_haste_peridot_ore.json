@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "miningmaster",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "spelunkeryplus:mm_andesite_haste_peridot_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "spelunkeryplus:mm_raw_haste_peridot"
+    },
+    {
+      "item": "spelunkeryplus:mm_raw_haste_peridot",
+      "chance": 0.75
+    },
+    {
+      "item": "create:experience_nugget",
+      "chance": 0.75
+    },
+    {
+      "item": "minecraft:andesite",
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 350
+}

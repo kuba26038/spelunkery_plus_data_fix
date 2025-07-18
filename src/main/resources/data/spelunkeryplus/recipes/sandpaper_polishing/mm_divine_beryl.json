@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "iceandfire",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "spelunkeryplus:mm_raw_divine_beryl"
+    }
+  ],
+  "results": [
+    {
+      "item": "miningmaster:divine_beryl"
+    }
+  ]
+}

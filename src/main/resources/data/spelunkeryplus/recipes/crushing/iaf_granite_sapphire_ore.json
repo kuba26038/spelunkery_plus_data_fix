@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "iceandfire",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "spelunkeryplus:iaf_granite_sapphire_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "iceandfire:sapphire_gem"
+    },
+    {
+      "item": "iceandfire:sapphire_gem",
+      "chance": 0.75
+    },
+    {
+      "item": "create:experience_nugget",
+      "chance": 0.75
+    },
+    {
+      "item": "minecraft:granite",
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 350
+}

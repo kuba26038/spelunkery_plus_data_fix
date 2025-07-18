@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "miningmaster",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "spelunkeryplus:mm_diorite_divine_beryl_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "spelunkeryplus:mm_raw_divine_beryl"
+    },
+    {
+      "item": "spelunkeryplus:mm_raw_divine_beryl",
+      "chance": 0.75
+    },
+    {
+      "item": "create:experience_nugget",
+      "chance": 0.75
+    },
+    {
+      "item": "minecraft:diorite",
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 350
+}
