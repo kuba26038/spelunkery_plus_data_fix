@@ -1,17 +1,7 @@
 package net.tysontheember.spelunkeryplus;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.Minecraft;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -19,13 +9,9 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
 import net.tysontheember.spelunkeryplus.block.ModBlocks;
 import net.tysontheember.spelunkeryplus.item.ModItems;
 import org.slf4j.Logger;
@@ -69,10 +55,10 @@ public class SpelunkeryPlus
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 
-            event.accept(ModItems.ROUGH_SAPPHIRE);
-            event.accept(ModItems.ROUGH_SAPPHIRE_SHARD);
-            event.accept(ModItems.SAPPHIRE_SHARD);
-            event.accept(ModBlocks.ROUGH_SAPPHIRE_BLOCK);
+            event.accept(ModItems.IAF_ROUGH_SAPPHIRE);
+            event.accept(ModItems.IAF_ROUGH_SAPPHIRE_SHARD);
+            event.accept(ModItems.IAF_SAPPHIRE_SHARD);
+            event.accept(ModBlocks.IAF_ROUGH_SAPPHIRE_BLOCK);
             event.accept(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE);
             event.accept(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE);
             event.accept(ModBlocks.IAF_TUFF_SAPPHIRE_ORE);
@@ -146,6 +132,23 @@ public class SpelunkeryPlus
             event.accept(ModBlocks.MM_TUFF_SPIDER_KUNZITE_ORE);
             event.accept(ModBlocks.MM_TUFF_SPIRIT_GARNET_ORE);
             event.accept(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE);
+
+
+            event.accept(ModBlocks.CC_ANDESITE_SPINEL_ORE);
+            event.accept(ModBlocks.CC_TUFF_SPINEL_ORE);
+            event.accept(ModBlocks.CC_GRANITE_SPINEL_ORE);
+            event.accept(ModBlocks.CC_DIORITE_SPINEL_ORE);
+            event.accept(ModItems.CC_ROUGH_SPINEL);
+            event.accept(ModItems.CC_ROUGH_SPINEL_SHARD);
+            event.accept(ModItems.CC_SPINEL_SHARD);
+
+
+            event.accept(ModBlocks.FA_ANDESITE_ARCANE_CRYSTAL_ORE);
+            event.accept(ModBlocks.FA_GRANITE_ARCANE_CRYSTAL_ORE);
+            event.accept(ModBlocks.FA_DIORITE_ARCANE_CRYSTAL_ORE);
+            event.accept(ModBlocks.FA_TUFF_ARCANE_CRYSTAL_ORE);
+
+            event.accept(ModItems.FA_ROUGH_ARCANE_CRYSTAL);
 
         }
 

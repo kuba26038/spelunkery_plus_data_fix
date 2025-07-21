@@ -3,8 +3,9 @@ package net.tysontheember.spelunkeryplus.datagen.loot;
 import net.minecraft.advancements.critereon.EnchantmentPredicate;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.advancements.critereon.MinMaxBounds;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -33,23 +34,39 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(ModBlocks.ROUGH_SAPPHIRE_BLOCK.get());
+        this.dropSelf(ModBlocks.IAF_ROUGH_SAPPHIRE_BLOCK.get());
 
         this.add(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE.get(),
-                block -> createOreDrop(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE.get(), ModItems.ROUGH_SAPPHIRE.get()));
+                block -> createOreDrop(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE.get(), ModItems.IAF_ROUGH_SAPPHIRE.get()));
 
         this.add(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE.get(),
-                block -> createSilkTouchAndShardDrops(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.ROUGH_SAPPHIRE.get(), ModItems.ROUGH_SAPPHIRE_SHARD.get()));
+                block -> createSilkTouchAndShardDrops(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.IAF_ROUGH_SAPPHIRE.get(), ModItems.IAF_ROUGH_SAPPHIRE_SHARD.get()));
 
         this.add(ModBlocks.IAF_GRANITE_SAPPHIRE_ORE.get(),
-                block -> createOreDrop(ModBlocks.IAF_GRANITE_SAPPHIRE_ORE.get(), ModItems.ROUGH_SAPPHIRE.get()));
+                block -> createOreDrop(ModBlocks.IAF_GRANITE_SAPPHIRE_ORE.get(), ModItems.IAF_ROUGH_SAPPHIRE.get()));
 
         this.add(ModBlocks.IAF_TUFF_SAPPHIRE_ORE.get(),
-                block -> createOreDrop(ModBlocks.IAF_TUFF_SAPPHIRE_ORE.get(), ModItems.ROUGH_SAPPHIRE.get()));
+                block -> createOreDrop(ModBlocks.IAF_TUFF_SAPPHIRE_ORE.get(), ModItems.IAF_ROUGH_SAPPHIRE.get()));
 
         this.add(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE.get(),
-                block -> createOreDrop(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE.get(), ModItems.ROUGH_SAPPHIRE.get()));
+                block -> createOreDrop(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE.get(), ModItems.IAF_ROUGH_SAPPHIRE.get()));
 
+
+        this.add(ModBlocks.IAF_ANDESITE_SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.IAF_ANDESITE_SILVER_ORE.get(),
+                        BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:raw_silver"))));
+
+        this.add(ModBlocks.IAF_GRANITE_SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.IAF_GRANITE_SILVER_ORE.get(),
+                        BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:raw_silver"))));
+
+        this.add(ModBlocks.IAF_TUFF_SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.IAF_TUFF_SILVER_ORE.get(),
+                        BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:raw_silver"))));
+
+        this.add(ModBlocks.IAF_DIORITE_SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.IAF_DIORITE_SILVER_ORE.get(),
+                        BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:raw_silver"))));
 
 
 
@@ -144,6 +161,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.MM_TUFF_SPIRIT_GARNET_ORE.get(), ModItems.MM_RAW_SPIRIT_GARNET.get()));
         this.add(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE.get(), ModItems.MM_RAW_UNBREAKING_IOLITE.get()));
+
+
+
+        this.add(ModBlocks.CC_ANDESITE_SPINEL_ORE.get(),
+                block -> createOreDrop(ModBlocks.CC_ANDESITE_SPINEL_ORE.get(), ModItems.CC_ROUGH_SPINEL.get()));
+        this.add(ModBlocks.CC_GRANITE_SPINEL_ORE.get(),
+                block -> createOreDrop(ModBlocks.CC_GRANITE_SPINEL_ORE.get(), ModItems.CC_ROUGH_SPINEL.get()));
+        this.add(ModBlocks.CC_DIORITE_SPINEL_ORE.get(),
+                block -> createOreDrop(ModBlocks.CC_DIORITE_SPINEL_ORE.get(), ModItems.CC_ROUGH_SPINEL.get()));
+        this.add(ModBlocks.CC_TUFF_SPINEL_ORE.get(),
+                block -> createOreDrop(ModBlocks.CC_TUFF_SPINEL_ORE.get(), ModItems.CC_ROUGH_SPINEL.get()));
 
 
 

@@ -2,18 +2,13 @@ package net.tysontheember.spelunkeryplus.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.TagKey;
-import net.minecraft.world.item.Item;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.tysontheember.spelunkeryplus.SpelunkeryPlus;
 import net.tysontheember.spelunkeryplus.block.ModBlocks;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Calendar;
 import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagGenerator extends BlockTagsProvider {
@@ -26,7 +21,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE.get())
                 .add(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE.get())
-                .add(ModBlocks.ROUGH_SAPPHIRE_BLOCK.get())
+                .add(ModBlocks.IAF_ROUGH_SAPPHIRE_BLOCK.get())
                 .add(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE.get())
                 .add(ModBlocks.IAF_TUFF_SAPPHIRE_ORE.get())
 
@@ -89,7 +84,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.IAF_GRANITE_SAPPHIRE_ORE.get())
                 .add(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE.get())
                 .add(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE.get())
-                .add(ModBlocks.ROUGH_SAPPHIRE_BLOCK.get())
+                .add(ModBlocks.IAF_ROUGH_SAPPHIRE_BLOCK.get())
                 .add(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE.get())
                 .add(ModBlocks.IAF_TUFF_SAPPHIRE_ORE.get())
 
