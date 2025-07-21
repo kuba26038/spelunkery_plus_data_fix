@@ -2,6 +2,7 @@ package net.tysontheember.spelunkeryplus.block;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.tysontheember.spelunkeryplus.SpelunkeryPlus;
 import net.tysontheember.spelunkeryplus.item.ModItems;
@@ -15,8 +16,13 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.valhelsia.valhelsia_core.api.client.ValhelsiaRenderType;
+import net.valhelsia.valhelsia_core.api.common.registry.helper.block.BlockRegistryEntry;
+
 
 import java.util.function.Supplier;
+
+import static com.stal111.forbidden_arcanus.core.init.ModBlocks.HELPER;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
@@ -48,6 +54,21 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
 
+    public static final RegistryObject<Block> IAF_TUFF_SILVER_ORE = registerBlock("iaf_tuff_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
+
+    public static final RegistryObject<Block> IAF_GRANITE_SILVER_ORE = registerBlock("iaf_granite_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
+
+    public static final RegistryObject<Block> IAF_DIORITE_SILVER_ORE = registerBlock("iaf_diorite_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
+
+    public static final RegistryObject<Block> IAF_ANDESITE_SILVER_ORE = registerBlock("iaf_andesite_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
 
 
 //Mining Master
@@ -284,8 +305,82 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()));
 
 
+//Forbidden And Arcanus
+    public static final BlockRegistryEntry<DropExperienceBlock> FA_ANDESITE_ARCANE_CRYSTAL_ORE = HELPER.register(
+                    "fa_andesite_arcane_crystal_ore",
+                    () -> new DropExperienceBlock(
+                            BlockBehaviour.Properties.of()
+                                    .mapColor(MapColor.STONE)
+                                    .instrument(NoteBlockInstrument.BASEDRUM)
+                                    .requiresCorrectToolForDrops()
+                                    .strength(3.0F),
+                            UniformInt.of(2, 5)
+                    )
+            )
+            .withItem()
+            .renderType(ValhelsiaRenderType.CUTOUT);
+
+    public static final BlockRegistryEntry<DropExperienceBlock> FA_DIORITE_ARCANE_CRYSTAL_ORE = HELPER.register(
+                    "fa_diorite_arcane_crystal_ore",
+                    () -> new DropExperienceBlock(
+                            BlockBehaviour.Properties.of()
+                                    .mapColor(MapColor.STONE)
+                                    .instrument(NoteBlockInstrument.BASEDRUM)
+                                    .requiresCorrectToolForDrops()
+                                    .strength(3.0F),
+                            UniformInt.of(2, 5)
+                    )
+            )
+            .withItem()
+            .renderType(ValhelsiaRenderType.CUTOUT);
+
+    public static final BlockRegistryEntry<DropExperienceBlock> FA_GRANITE_ARCANE_CRYSTAL_ORE = HELPER.register(
+                    "fa_granite_arcane_crystal_ore",
+                    () -> new DropExperienceBlock(
+                            BlockBehaviour.Properties.of()
+                                    .mapColor(MapColor.STONE)
+                                    .instrument(NoteBlockInstrument.BASEDRUM)
+                                    .requiresCorrectToolForDrops()
+                                    .strength(3.0F),
+                            UniformInt.of(2, 5)
+                    )
+            )
+            .withItem()
+            .renderType(ValhelsiaRenderType.CUTOUT);
+
+    public static final BlockRegistryEntry<DropExperienceBlock> FA_TUFF_ARCANE_CRYSTAL_ORE = HELPER.register(
+                    "fa_tuff_arcane_crystal_ore",
+                    () -> new DropExperienceBlock(
+                            BlockBehaviour.Properties.of()
+                                    .mapColor(MapColor.STONE)
+                                    .instrument(NoteBlockInstrument.BASEDRUM)
+                                    .requiresCorrectToolForDrops()
+                                    .strength(3.0F),
+                            UniformInt.of(2, 5)
+                    )
+            )
+            .withItem()
+            .renderType(ValhelsiaRenderType.CUTOUT);
 
 
+
+//Caverns and Chasms
+    public static final RegistryObject<Block> CC_ANDESITE_SPINEL_ORE = registerBlock("cc_andesite_spinel_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE)
+                    .strength(3.0F)
+                    .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CC_DIORITE_SPINEL_ORE = registerBlock("cc_diorite_spinel_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE)
+                    .strength(3.0F)
+                    .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CC_GRANITE_SPINEL_ORE = registerBlock("cc_granite_spinel_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)
+                    .strength(3.0F)
+                    .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CC_TUFF_SPINEL_ORE = registerBlock("cc_tuff_spinel_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .strength(3.0F)
+                    .requiresCorrectToolForDrops()));
 
 
 

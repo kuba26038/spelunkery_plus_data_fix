@@ -49,6 +49,18 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
 
+    public static final RegistryObject<Item> CC_ROUGH_SPINEL = ITEMS.register("cc_rough_spinel",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CC_ROUGH_SPINEL_SHARD = ITEMS.register("cc_rough_spinel_shard",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CC_SPINEL_SHARD = ITEMS.register("cc_spinel_shard",
+            () -> new Item(new Item.Properties()));
+
+
+    public static final RegistryObject<Item> FA_ROUGH_ARCANE_CRYSTAL = ITEMS.register("fa_rough_arcane_crystal",
+            () -> new Item(new Item.Properties()));
+
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

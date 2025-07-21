@@ -133,6 +133,22 @@ public class SpelunkeryPlus
             event.accept(ModBlocks.MM_TUFF_SPIRIT_GARNET_ORE);
             event.accept(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE);
 
+
+            event.accept(ModBlocks.CC_ANDESITE_SPINEL_ORE);
+            event.accept(ModBlocks.CC_TUFF_SPINEL_ORE);
+            event.accept(ModBlocks.CC_GRANITE_SPINEL_ORE);
+            event.accept(ModBlocks.CC_DIORITE_SPINEL_ORE);
+            event.accept(ModItems.CC_ROUGH_SPINEL);
+            event.accept(ModItems.CC_ROUGH_SPINEL_SHARD);
+            event.accept(ModItems.CC_SPINEL_SHARD);
+
+
+            event.accept(ModBlocks.FA_ANDESITE_ARCANE_CRYSTAL_ORE);
+            event.accept(ModBlocks.FA_GRANITE_ARCANE_CRYSTAL_ORE);
+            event.accept(ModBlocks.FA_DIORITE_ARCANE_CRYSTAL_ORE);
+            event.accept(ModBlocks.FA_TUFF_ARCANE_CRYSTAL_ORE);
+            event.accept(ModItems.FA_ROUGH_ARCANE_CRYSTAL);
+
         }
 
     }
