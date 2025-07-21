@@ -4,7 +4,6 @@ import net.minecraft.advancements.critereon.EnchantmentPredicate;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.advancements.critereon.MinMaxBounds;
 import net.minecraft.data.loot.BlockLootSubProvider;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -33,22 +32,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        this.dropSelf(ModBlocks.ROUGH_SAPPHIRE_BLOCK.get());
+        this.dropSelf(ModBlocks.IAF_ROUGH_SAPPHIRE_BLOCK.get());
 
         this.add(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE.get(),
-                block -> createOreDrop(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE.get(), ModItems.ROUGH_SAPPHIRE.get()));
+                block -> createOreDrop(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE.get(), ModItems.IAF_ROUGH_SAPPHIRE.get()));
 
         this.add(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE.get(),
-                block -> createSilkTouchAndShardDrops(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.ROUGH_SAPPHIRE.get(), ModItems.ROUGH_SAPPHIRE_SHARD.get()));
+                block -> createSilkTouchAndShardDrops(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE.get(), ModItems.IAF_ROUGH_SAPPHIRE.get(), ModItems.IAF_ROUGH_SAPPHIRE_SHARD.get()));
 
         this.add(ModBlocks.IAF_GRANITE_SAPPHIRE_ORE.get(),
-                block -> createOreDrop(ModBlocks.IAF_GRANITE_SAPPHIRE_ORE.get(), ModItems.ROUGH_SAPPHIRE.get()));
+                block -> createOreDrop(ModBlocks.IAF_GRANITE_SAPPHIRE_ORE.get(), ModItems.IAF_ROUGH_SAPPHIRE.get()));
 
         this.add(ModBlocks.IAF_TUFF_SAPPHIRE_ORE.get(),
-                block -> createOreDrop(ModBlocks.IAF_TUFF_SAPPHIRE_ORE.get(), ModItems.ROUGH_SAPPHIRE.get()));
+                block -> createOreDrop(ModBlocks.IAF_TUFF_SAPPHIRE_ORE.get(), ModItems.IAF_ROUGH_SAPPHIRE.get()));
 
         this.add(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE.get(),
-                block -> createOreDrop(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE.get(), ModItems.ROUGH_SAPPHIRE.get()));
+                block -> createOreDrop(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE.get(), ModItems.IAF_ROUGH_SAPPHIRE.get()));
 
 
 

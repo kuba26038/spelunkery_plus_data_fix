@@ -12,11 +12,11 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, SpelunkeryPlus.MODID);
 
 
-    public static final RegistryObject<Item> ROUGH_SAPPHIRE = ITEMS.register("rough_sapphire",
+    public static final RegistryObject<Item> IAF_ROUGH_SAPPHIRE = ITEMS.register("iaf_rough_sapphire",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> SAPPHIRE_SHARD = ITEMS.register("sapphire_shard",
+    public static final RegistryObject<Item> IAF_SAPPHIRE_SHARD = ITEMS.register("iaf_sapphire_shard",
                 () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> ROUGH_SAPPHIRE_SHARD = ITEMS.register("rough_sapphire_shard",
+    public static final RegistryObject<Item> IAF_ROUGH_SAPPHIRE_SHARD = ITEMS.register("iaf_rough_sapphire_shard",
             () -> new Item(new Item.Properties()));
 
 

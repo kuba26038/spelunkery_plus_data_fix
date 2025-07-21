@@ -1,6 +1,5 @@
 package net.tysontheember.spelunkeryplus.block;
 
-import com.simibubi.create.content.materials.ExperienceBlock;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.material.MapColor;
@@ -26,7 +25,7 @@ public class ModBlocks {
     
     
 //Ice and Fire
-    public static final RegistryObject<Block> ROUGH_SAPPHIRE_BLOCK = registerBlock("rough_sapphire_block",
+    public static final RegistryObject<Block> IAF_ROUGH_SAPPHIRE_BLOCK = registerBlock("iaf_rough_sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> IAF_DEEPSLATE_SAPPHIRE_ORE = registerBlock("iaf_deepslate_sapphire_ore",

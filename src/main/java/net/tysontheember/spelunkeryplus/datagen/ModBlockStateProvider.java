@@ -18,7 +18,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     //ICEANDFIRE
         //Sapphire
-        blockWithItem(ModBlocks.ROUGH_SAPPHIRE_BLOCK);
+        blockWithItem(ModBlocks.IAF_ROUGH_SAPPHIRE_BLOCK);
         blockWithItem(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE);
         blockWithItem(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE);
         blockWithItem(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE);
