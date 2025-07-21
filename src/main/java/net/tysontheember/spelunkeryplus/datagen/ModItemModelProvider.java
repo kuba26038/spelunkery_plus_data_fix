@@ -17,9 +17,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(ModItems.IAF_ROUGH_SAPPHIRE);
-        simpleItem(ModItems.IAF_SAPPHIRE_SHARD);
-        simpleItem(ModItems.IAF_ROUGH_SAPPHIRE_SHARD);
+        simpleItem(ModItems.ROUGH_SAPPHIRE);
+        simpleItem(ModItems.SAPPHIRE_SHARD);
+        simpleItem(ModItems.ROUGH_SAPPHIRE_SHARD);
 
         simpleItem(ModItems.MM_RAW_AIR_MALACHITE);
         simpleItem(ModItems.MM_RAW_DIVE_AQUAMARINE);

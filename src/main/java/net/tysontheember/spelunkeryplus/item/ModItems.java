@@ -12,11 +12,11 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, SpelunkeryPlus.MODID);
 
 
-    public static final RegistryObject<Item> IAF_ROUGH_SAPPHIRE = ITEMS.register("iaf_rough_sapphire",
+    public static final RegistryObject<Item> ROUGH_SAPPHIRE = ITEMS.register("rough_sapphire",
             () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> IAF_SAPPHIRE_SHARD = ITEMS.register("iaf_sapphire_shard",
+    public static final RegistryObject<Item> SAPPHIRE_SHARD = ITEMS.register("sapphire_shard",
                 () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> IAF_ROUGH_SAPPHIRE_SHARD = ITEMS.register("iaf_rough_sapphire_shard",
+    public static final RegistryObject<Item> ROUGH_SAPPHIRE_SHARD = ITEMS.register("rough_sapphire_shard",
             () -> new Item(new Item.Properties()));
 
 
@@ -46,18 +46,6 @@ public class ModItems {
     public static final RegistryObject<Item> MM_RAW_SPIRIT_GARNET = ITEMS.register("mm_raw_spirit_garnet",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> MM_RAW_UNBREAKING_IOLITE = ITEMS.register("mm_raw_unbreaking_iolite",
-            () -> new Item(new Item.Properties()));
-
-
-    public static final RegistryObject<Item> CC_ROUGH_SPINEL = ITEMS.register("cc_rough_spinel",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CC_ROUGH_SPINEL_SHARD = ITEMS.register("cc_rough_spinel_shard",
-            () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> CC_SPINEL_SHARD = ITEMS.register("cc_spinel_shard",
-            () -> new Item(new Item.Properties()));
-
-
-    public static final RegistryObject<Item> FA_ROUGH_ARCANE_CRYSTAL = ITEMS.register("fa_rough_arcane_crystal",
             () -> new Item(new Item.Properties()));
 
 
