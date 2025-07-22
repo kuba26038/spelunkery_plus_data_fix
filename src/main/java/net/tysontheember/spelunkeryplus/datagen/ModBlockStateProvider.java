@@ -16,6 +16,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
 
+        //MUST HAVE SAME ORDER OF MODBLOCKS
+
     //ICEANDFIRE
         //Sapphire
         blockWithItem(ModBlocks.IAF_ROUGH_SAPPHIRE_BLOCK);
@@ -81,6 +83,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MM_TUFF_SPIDER_KUNZITE_ORE);
         blockWithItem(ModBlocks.MM_TUFF_SPIRIT_GARNET_ORE);
         blockWithItem(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE);
+
+        blockWithItem(ModBlocks.CC_ANDESITE_SPINEL_ORE);
+        blockWithItem(ModBlocks.CC_GRANITE_SPINEL_ORE);
+        blockWithItem(ModBlocks.CC_DIORITE_SPINEL_ORE);
+        blockWithItem(ModBlocks.CC_TUFF_SPINEL_ORE);
+        blockWithItem(ModBlocks.CC_ROUGH_SPINEL_BLOCK);
 
     }
 

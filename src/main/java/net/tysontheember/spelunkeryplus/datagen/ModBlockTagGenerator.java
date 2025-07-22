@@ -5,6 +5,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.fml.ModList;
 import net.tysontheember.spelunkeryplus.SpelunkeryPlus;
 import net.tysontheember.spelunkeryplus.block.ModBlocks;
 import org.jetbrains.annotations.Nullable;
@@ -78,7 +79,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.MM_TUFF_SPIDER_KUNZITE_ORE.get())
                 .add(ModBlocks.MM_TUFF_SPIRIT_GARNET_ORE.get())
                 .add(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE.get())
+
+                .add(ModBlocks.CC_DIORITE_SPINEL_ORE.get())
+                .add(ModBlocks.CC_TUFF_SPINEL_ORE.get())
+                .add(ModBlocks.CC_ANDESITE_SPINEL_ORE.get())
+                .add(ModBlocks.CC_GRANITE_SPINEL_ORE.get())
+                .add(ModBlocks.CC_ROUGH_SPINEL_BLOCK.get())
+
         ;
+
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.IAF_GRANITE_SAPPHIRE_ORE.get())
@@ -87,8 +96,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.IAF_ROUGH_SAPPHIRE_BLOCK.get())
                 .add(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE.get())
                 .add(ModBlocks.IAF_TUFF_SAPPHIRE_ORE.get())
-
-
 
                 .add(ModBlocks.MM_RAW_AIR_MALACHITE_BLOCK.get())
                 .add(ModBlocks.MM_RAW_DIVE_AQUAMARINE_BLOCK.get())
@@ -143,6 +150,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.MM_TUFF_SPIDER_KUNZITE_ORE.get())
                 .add(ModBlocks.MM_TUFF_SPIRIT_GARNET_ORE.get())
                 .add(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE.get())
+
+                .add(ModBlocks.CC_DIORITE_SPINEL_ORE.get())
+                .add(ModBlocks.CC_TUFF_SPINEL_ORE.get())
+                .add(ModBlocks.CC_ANDESITE_SPINEL_ORE.get())
+                .add(ModBlocks.CC_GRANITE_SPINEL_ORE.get())
+                .add(ModBlocks.CC_ROUGH_SPINEL_BLOCK.get())
+
 
         ;
     }

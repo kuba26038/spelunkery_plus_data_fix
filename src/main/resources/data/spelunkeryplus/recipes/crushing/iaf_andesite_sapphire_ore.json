@@ -12,15 +12,15 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "spelunkeryplus:iaf_granite_sapphire_ore"
+      "item": "spelunkeryplus:iaf_andesite_sapphire_ore"
     }
   ],
   "results": [
     {
-      "item": "spelunkeryplus:rough_sapphire"
+      "item": "iceandfire:sapphire_gem"
     },
     {
-      "item": "spelunkeryplus:rough_sapphire",
+      "item": "iceandfire:sapphire_gem",
       "chance": 0.75
     },
     {
@@ -28,7 +28,7 @@
       "chance": 0.75
     },
     {
-      "item": "minecraft:granite",
+      "item": "minecraft:andesite",
       "chance": 0.125
     }
   ],

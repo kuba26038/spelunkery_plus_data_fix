@@ -183,6 +183,8 @@ dependencies {
     implementation     fg.deobf("curse.maven:emi-580555:6420945")
     implementation     fg.deobf("curse.maven:selene-499980:6740431")
     implementation     fg.deobf("curse.maven:spelunkery-790530:6122072")
+
+    runtimeOnly fg.deobf("curse.maven:screenshot-to-clipboard-326950:3643026")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

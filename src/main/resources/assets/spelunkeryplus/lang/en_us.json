@@ -77,5 +77,21 @@
   "block.spelunkeryplus.mm_tuff_spider_kunzite_ore": "Tuff Spider Kunzite Ore",
   "block.spelunkeryplus.mm_tuff_unbreaking_iolite_ore": "Tuff Unbreaking Iolite Ore",
 
-  "block.spelunkeryplus.fa_rough_arcane_crystal": "Rough Arcane Crystal"
+  "block.spelunkeryplus.cc_rough_spinel_block": "Rough Spinel Block",
+  "block.spelunkeryplus.cc_andesite_spinel_ore": "Andesite Spinel Ore",
+  "block.spelunkeryplus.cc_diorite_spinel_ore": "Diorite Spinel Ore",
+  "block.spelunkeryplus.cc_granite_spinel_ore": "Granite Spinel Ore",
+  "block.spelunkeryplus.cc_tuff_spinel_ore": "Tuff Spinel Ore",
+  "item.spelunkeryplus.cc_rough_spinel": "Rough Spinel",
+  "item.spelunkeryplus.cc_rough_spinel_shard": "Rough Spinel Shard",
+  "item.spelunkeryplus.cc_spinel_shard": "Spinel Shard",
+
+
+
+  "block.spelunkeryplus.fa_rough_arcane_crystal_block": "Rough Arcane Crystal Block",
+  "block.forbidden_arcanus.fa_andesite_arcane_crystal_ore": "Andesite Arcane Crystal Ore",
+  "block.forbidden_arcanus.fa_diorite_arcane_crystal_ore": "Diorite Arcane Crystal Ore",
+  "block.forbidden_arcanus.fa_granite_arcane_crystal_ore": "Granite Arcane Crystal Ore",
+  "block.forbidden_arcanus.fa_tuff_arcane_crystal_ore": "Tuff Arcane Crystal Ore",
+  "item.spelunkeryplus.fa_rough_arcane_crystal": "Rough Arcane Crystal"
 }

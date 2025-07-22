@@ -15,7 +15,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.tysontheember.spelunkeryplus.block.ModBlocks;
 import net.tysontheember.spelunkeryplus.item.ModItems;
 import org.slf4j.Logger;
-
+import net.minecraftforge.fml.ModList;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(SpelunkeryPlus.MODID)
 public class SpelunkeryPlus
@@ -143,12 +143,14 @@ public class SpelunkeryPlus
             event.accept(ModItems.CC_SPINEL_SHARD);
 
 
-            event.accept(ModBlocks.FA_ANDESITE_ARCANE_CRYSTAL_ORE);
-            event.accept(ModBlocks.FA_GRANITE_ARCANE_CRYSTAL_ORE);
-            event.accept(ModBlocks.FA_DIORITE_ARCANE_CRYSTAL_ORE);
-            event.accept(ModBlocks.FA_TUFF_ARCANE_CRYSTAL_ORE);
+            if (ModList.get().isLoaded("forbidden_arcanus")) {
+                event.accept(ModBlocks.FA_ANDESITE_ARCANE_CRYSTAL_ORE);
+                event.accept(ModBlocks.FA_GRANITE_ARCANE_CRYSTAL_ORE);
+                event.accept(ModBlocks.FA_DIORITE_ARCANE_CRYSTAL_ORE);
+                event.accept(ModBlocks.FA_TUFF_ARCANE_CRYSTAL_ORE);
+                event.accept(ModItems.FA_ROUGH_ARCANE_CRYSTAL);
+            }
 
-            event.accept(ModItems.FA_ROUGH_ARCANE_CRYSTAL);
 
         }
 

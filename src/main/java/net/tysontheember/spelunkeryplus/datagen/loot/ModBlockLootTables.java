@@ -162,8 +162,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE.get(), ModItems.MM_RAW_UNBREAKING_IOLITE.get()));
 
-
-
+        this.dropSelf(ModBlocks.CC_ROUGH_SPINEL_BLOCK.get());
         this.add(ModBlocks.CC_ANDESITE_SPINEL_ORE.get(),
                 block -> createOreDrop(ModBlocks.CC_ANDESITE_SPINEL_ORE.get(), ModItems.CC_ROUGH_SPINEL.get()));
         this.add(ModBlocks.CC_GRANITE_SPINEL_ORE.get(),

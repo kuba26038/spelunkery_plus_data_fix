@@ -77,6 +77,61 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         .save(consumer))
                 .build(pWriter, new ResourceLocation(SpelunkeryPlus.MODID, "sapphire_shards_from_gem"));
 
+
+
+
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CC_ROUGH_SPINEL_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.CC_ROUGH_SPINEL.get())
+                .unlockedBy(getHasName(ModItems.CC_ROUGH_SPINEL.get()), has(ModItems.CC_ROUGH_SPINEL.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CC_ROUGH_SPINEL.get(), 9)
+                .requires(ModBlocks.CC_ROUGH_SPINEL_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.CC_ROUGH_SPINEL_BLOCK.get()), has(ModBlocks.CC_ROUGH_SPINEL_BLOCK.get()))
+                .save(pWriter, new ResourceLocation(SpelunkeryPlus.MODID, "spinel_from_rough_block"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CC_ROUGH_SPINEL.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.CC_ROUGH_SPINEL_SHARD.get())
+                .unlockedBy(getHasName(ModItems.CC_ROUGH_SPINEL_SHARD.get()), has(ModItems.CC_ROUGH_SPINEL_SHARD.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CC_ROUGH_SPINEL_SHARD.get(), 9)
+                .requires(ModItems.CC_ROUGH_SPINEL.get())
+                .unlockedBy(getHasName(ModItems.CC_ROUGH_SPINEL.get()), has(ModItems.CC_ROUGH_SPINEL.get()))
+                .save(pWriter);
+
+        ConditionalRecipe.builder()
+                .addCondition(new ModLoadedCondition("caverns_and_chasms"))
+                .addRecipe(consumer -> ShapedRecipeBuilder.shaped(
+                                RecipeCategory.MISC,
+                                BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:spinel")))
+                        .pattern("SSS")
+                        .pattern("SSS")
+                        .pattern("SSS")
+                        .define('S', ModItems.CC_SPINEL_SHARD.get())
+                        .unlockedBy(getHasName(ModItems.CC_SPINEL_SHARD.get()), has(ModItems.CC_SPINEL_SHARD.get()))
+                        .save(consumer))
+                .build(pWriter, new ResourceLocation(SpelunkeryPlus.MODID, "spinel_gem_from_shards"));
+
+        ConditionalRecipe.builder()
+                .addCondition(new ModLoadedCondition("caverns_and_chasms"))
+                .addRecipe(consumer -> ShapelessRecipeBuilder.shapeless(
+                                RecipeCategory.MISC,
+                                ModItems.CC_SPINEL_SHARD.get(), 9)
+                        .requires(BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:spinel")))
+                        .unlockedBy("has_spinel", InventoryChangeTrigger.TriggerInstance.hasItems(
+                                BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:spinel"))))
+                        .save(consumer))
+                .build(pWriter, new ResourceLocation(SpelunkeryPlus.MODID, "spinel_shards_from_gem"));
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

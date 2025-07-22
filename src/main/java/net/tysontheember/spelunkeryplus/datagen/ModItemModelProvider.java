@@ -36,6 +36,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MM_RAW_SPIRIT_GARNET);
         simpleItem(ModItems.MM_RAW_UNBREAKING_IOLITE);
 
+        simpleItem(ModItems.CC_ROUGH_SPINEL_SHARD);
+        simpleItem(ModItems.CC_ROUGH_SPINEL);
+        simpleItem(ModItems.CC_SPINEL_SHARD);
+
         simpleItem(ModItems.FA_ROUGH_ARCANE_CRYSTAL);
     }
 

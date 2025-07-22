@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "caverns_and_chasms",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "spelunkeryplus:cc_rough_spinel"
+    }
+  ],
+  "results": [
+    {
+      "item": "caverns_and_chasms:spinel"
+    }
+  ]
+}

@@ -5,22 +5,22 @@
       "type": "forge:mod_loaded"
     },
     {
-      "modid": "iceandfire",
+      "modid": "caverns_and_chasms",
       "type": "forge:mod_loaded"
     }
   ],
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "spelunkeryplus:iaf_granite_sapphire_ore"
+      "item": "spelunkeryplus:cc_granite_spinel_ore"
     }
   ],
   "results": [
     {
-      "item": "spelunkeryplus:rough_sapphire"
+      "item": "spelunkeryplus:cc_rough_spinel"
     },
     {
-      "item": "spelunkeryplus:rough_sapphire",
+      "item": "spelunkeryplus:cc_rough_spinel",
       "chance": 0.75
     },
     {
