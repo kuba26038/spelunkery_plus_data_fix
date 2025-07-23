@@ -172,7 +172,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.CC_TUFF_SPINEL_ORE.get(),
                 block -> createOreDrop(ModBlocks.CC_TUFF_SPINEL_ORE.get(), ModItems.CC_ROUGH_SPINEL.get()));
 
-
+        this.add(ModBlocks.CC_ANDESITE_SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.CC_ANDESITE_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_caverns:raw_silver"))));
+        this.add(ModBlocks.CC_GRANITE_SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.CC_GRANITE_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_caverns:raw_silver"))));
+        this.add(ModBlocks.CC_DIORITE_SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.CC_DIORITE_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_caverns:raw_silver"))));
+        this.add(ModBlocks.CC_TUFF_SILVER_ORE.get(),
+                block -> createOreDrop(ModBlocks.CC_TUFF_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_caverns:raw_silver"))));
 
 
 

@@ -14,8 +14,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.tysontheember.spelunkeryplus.block.ModBlocks;
 import net.tysontheember.spelunkeryplus.item.ModItems;
+import net.tysontheember.spelunkeryplus.world.features.ModFeatures;
 import org.slf4j.Logger;
 import net.minecraftforge.fml.ModList;
+import net.tysontheember.spelunkeryplus.init.MMFeatures;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(SpelunkeryPlus.MODID)
 public class SpelunkeryPlus
@@ -23,7 +26,7 @@ public class SpelunkeryPlus
     // Define mod id in a common place for everything to reference
     public static final String MODID = "spelunkeryplus";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public SpelunkeryPlus(FMLJavaModLoadingContext context)
     {
@@ -31,10 +34,10 @@ public class SpelunkeryPlus
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModFeatures.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
@@ -59,11 +62,17 @@ public class SpelunkeryPlus
             event.accept(ModItems.IAF_ROUGH_SAPPHIRE_SHARD);
             event.accept(ModItems.IAF_SAPPHIRE_SHARD);
             event.accept(ModBlocks.IAF_ROUGH_SAPPHIRE_BLOCK);
-            event.accept(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE);
             event.accept(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.IAF_GRANITE_SAPPHIRE_ORE);
             event.accept(ModBlocks.IAF_TUFF_SAPPHIRE_ORE);
             event.accept(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE);
-            event.accept(ModBlocks.IAF_GRANITE_SAPPHIRE_ORE);
+
+            event.accept(ModBlocks.IAF_ANDESITE_SILVER_ORE);
+            event.accept(ModBlocks.IAF_DIORITE_SILVER_ORE);
+            event.accept(ModBlocks.IAF_GRANITE_SILVER_ORE);
+            event.accept(ModBlocks.IAF_TUFF_SILVER_ORE);
+
 
             event.accept(ModBlocks.MM_RAW_AIR_MALACHITE_BLOCK);
             event.accept(ModBlocks.MM_RAW_DIVE_AQUAMARINE_BLOCK);
@@ -141,6 +150,11 @@ public class SpelunkeryPlus
             event.accept(ModItems.CC_ROUGH_SPINEL);
             event.accept(ModItems.CC_ROUGH_SPINEL_SHARD);
             event.accept(ModItems.CC_SPINEL_SHARD);
+
+            event.accept(ModBlocks.CC_ANDESITE_SILVER_ORE);
+            event.accept(ModBlocks.CC_DIORITE_SILVER_ORE);
+            event.accept(ModBlocks.CC_GRANITE_SILVER_ORE);
+            event.accept(ModBlocks.CC_TUFF_SILVER_ORE);
 
 
             if (ModList.get().isLoaded("forbidden_arcanus")) {

@@ -51,6 +51,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
 
+
+
     public static final RegistryObject<Block> IAF_ANDESITE_SAPPHIRE_ORE = registerBlock("iaf_andesite_sapphire_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE)
                     .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
@@ -397,6 +399,24 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> CC_ROUGH_SPINEL_BLOCK = registerBlock("cc_rough_spinel_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
+
+    public static final RegistryObject<Block> CC_ANDESITE_SILVER_ORE = registerBlock("cc_andesite_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.ANDESITE)
+                    .strength(3.0F)
+                    .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CC_DIORITE_SILVER_ORE = registerBlock("cc_diorite_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIORITE)
+                    .strength(3.0F)
+                    .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CC_GRANITE_SILVER_ORE = registerBlock("cc_granite_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.GRANITE)
+                    .strength(3.0F)
+                    .requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> CC_TUFF_SILVER_ORE = registerBlock("cc_tuff_silver_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)
+                    .strength(3.0F)
+                    .requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

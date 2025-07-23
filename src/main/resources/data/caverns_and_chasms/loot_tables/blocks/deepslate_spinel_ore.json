@@ -29,8 +29,17 @@
             },
             {
               "type": "minecraft:item",
-              "name": "spelunkeryplus:rough_spinel",
+              "name": "spelunkeryplus:cc_rough_spinel",
               "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 1.0,
+                    "max": 2.0
+                  },
+                  "add": false
+                },
                 {
                   "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
@@ -73,7 +82,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "spelunkeryplus:rough_spinel_shard",
+              "name": "spelunkeryplus:cc_rough_spinel_shard",
               "functions": [
                 {
                   "function": "minecraft:set_count",
@@ -98,5 +107,6 @@
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "caverns_and_chasms:blocks/deepslate_spinel_ore"
 }

@@ -1,13 +1,18 @@
 {
-  "item.spelunkeryplus.rough_sapphire": "Rough Sapphire",
-  "item.spelunkeryplus.sapphire_shard": "Sapphire Shard",
-  "item.spelunkeryplus.rough_sapphire_shard": "Rough Sapphire Shard",
-  "block.spelunkeryplus.rough_sapphire_block": "Rough Sapphire Block",
+  "item.spelunkeryplus.iaf_rough_sapphire": "Rough Sapphire",
+  "item.spelunkeryplus.iaf_sapphire_shard": "Sapphire Shard",
+  "item.spelunkeryplus.iaf_rough_sapphire_shard": "Rough Sapphire Shard",
+  "block.spelunkeryplus.iaf_rough_sapphire_block": "Rough Sapphire Block",
   "block.spelunkeryplus.iaf_granite_sapphire_ore": "Granite Sapphire Ore",
   "block.spelunkeryplus.iaf_andesite_sapphire_ore": "Andesite Sapphire Ore",
   "block.spelunkeryplus.iaf_deepslate_sapphire_ore": "Deepslate Sapphire Ore",
   "block.spelunkeryplus.iaf_diorite_sapphire_ore": "Diorite Sapphire Ore",
   "block.spelunkeryplus.iaf_tuff_sapphire_ore": "Tuff Sapphire Ore",
+
+  "block.spelunkeryplus.iaf_andesite_silver_ore": "Andesite Silver Ore",
+  "block.spelunkeryplus.iaf_diorite_silver_ore": "Diorite Silver Ore",
+  "block.spelunkeryplus.iaf_granite_silver_ore": "Granite Silver Ore",
+  "block.spelunkeryplus.iaf_tuff_silver_ore": "Tuff Silver Ore",
 
   "block.spelunkeryplus.mm_raw_fire_ruby_block": "Block of Rough Fire Ruby",
   "block.spelunkeryplus.mm_raw_ice_sapphire_block": "Block of Rough Ice Sapphire",
@@ -85,6 +90,11 @@
   "item.spelunkeryplus.cc_rough_spinel": "Rough Spinel",
   "item.spelunkeryplus.cc_rough_spinel_shard": "Rough Spinel Shard",
   "item.spelunkeryplus.cc_spinel_shard": "Spinel Shard",
+
+  "block.spelunkeryplus.cc_andesite_silver_ore": "Andesite Silver Ore",
+  "block.spelunkeryplus.cc_diorite_silver_ore": "Diorite Silver Ore",
+  "block.spelunkeryplus.cc_granite_silver_ore": "Granite Silver Ore",
+  "block.spelunkeryplus.cc_tuff_silver_ore": "Tuff Silver Ore",
 
 
 

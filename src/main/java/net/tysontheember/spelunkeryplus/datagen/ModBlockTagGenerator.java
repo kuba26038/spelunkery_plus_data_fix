@@ -26,6 +26,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE.get())
                 .add(ModBlocks.IAF_TUFF_SAPPHIRE_ORE.get())
 
+                .add(ModBlocks.IAF_ANDESITE_SILVER_ORE.get())
+                .add(ModBlocks.IAF_DIORITE_SILVER_ORE.get())
+                .add(ModBlocks.IAF_GRANITE_SILVER_ORE.get())
+                .add(ModBlocks.IAF_TUFF_SILVER_ORE.get())
+
+
                 .add(ModBlocks.MM_RAW_AIR_MALACHITE_BLOCK.get())
                 .add(ModBlocks.MM_RAW_DIVE_AQUAMARINE_BLOCK.get())
                 .add(ModBlocks.MM_RAW_DIVINE_BERYL_BLOCK.get())
@@ -85,6 +91,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CC_ANDESITE_SPINEL_ORE.get())
                 .add(ModBlocks.CC_GRANITE_SPINEL_ORE.get())
                 .add(ModBlocks.CC_ROUGH_SPINEL_BLOCK.get())
+
 
         ;
 
@@ -97,6 +104,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.IAF_DIORITE_SAPPHIRE_ORE.get())
                 .add(ModBlocks.IAF_TUFF_SAPPHIRE_ORE.get())
 
+                .add(ModBlocks.IAF_ANDESITE_SILVER_ORE.get())
+                .add(ModBlocks.IAF_DIORITE_SILVER_ORE.get())
+                .add(ModBlocks.IAF_GRANITE_SILVER_ORE.get())
+                .add(ModBlocks.IAF_TUFF_SILVER_ORE.get())
+
+
                 .add(ModBlocks.MM_RAW_AIR_MALACHITE_BLOCK.get())
                 .add(ModBlocks.MM_RAW_DIVE_AQUAMARINE_BLOCK.get())
                 .add(ModBlocks.MM_RAW_DIVINE_BERYL_BLOCK.get())
@@ -157,6 +170,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.CC_GRANITE_SPINEL_ORE.get())
                 .add(ModBlocks.CC_ROUGH_SPINEL_BLOCK.get())
 
+                .add(ModBlocks.CC_ANDESITE_SILVER_ORE.get())
+                .add(ModBlocks.CC_DIORITE_SILVER_ORE.get())
+                .add(ModBlocks.CC_GRANITE_SILVER_ORE.get())
+                .add(ModBlocks.CC_TUFF_SILVER_ORE.get())
 
         ;
     }
