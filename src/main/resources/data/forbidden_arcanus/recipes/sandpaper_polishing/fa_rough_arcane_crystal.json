@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "forbidden_arcanus",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:sandpaper_polishing",
+  "ingredients": [
+    {
+      "item": "spelunkeryplus:fa_rough_arcane_crystal"
+    }
+  ],
+  "results": [
+    {
+      "item": "forbidden_arcanus:arcane_crystal"
+    }
+  ]
+}

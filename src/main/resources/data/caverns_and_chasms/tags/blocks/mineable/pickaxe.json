@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [],
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "caverns_and_chasms"
+    }
+  ],
+  "entries": [
+    "spelunkeryplus:cc_diorite_spinel_ore",
+    "spelunkeryplus:cc_tuff_spinel_ore",
+    "spelunkeryplus:cc_andesite_spinel_ore",
+    "spelunkeryplus:cc_granite_spinel_ore",
+    "spelunkeryplus:cc_rough_spinel_block",
+    "spelunkeryplus:cc_diorite_silver_ore",
+    "spelunkeryplus:cc_tuff_silver_ore",
+    "spelunkeryplus:cc_andesite_silver_ore",
+    "spelunkeryplus:cc_granite_silver_ore"
+  ]
+}
