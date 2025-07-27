@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "modid": "create",
+      "type": "forge:mod_loaded"
+    },
+    {
+      "modid": "caverns_and_chasms",
+      "type": "forge:mod_loaded"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "forbidden_arcanus:runic_deepslate"
+    }
+  ],
+  "results": [
+    {
+      "item": "forbidden_arcanus:rune"
+    },
+    {
+      "item": "forbidden_arcanus:rune",
+      "chance": 0.75
+    },
+    {
+      "item": "create:experience_nugget",
+      "chance": 0.75
+    },
+    {
+      "item": "minecraft:deepslate",
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 350
+}

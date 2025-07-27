@@ -20,10 +20,6 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        this.tag(Tags.Items.NUGGETS)
-                .add(ModItems.IAF_SAPPHIRE_SHARD.get());
 
-        this.tag(ModTags.Items.SAPPHIRE_NUGGETS)
-                .add(ModItems.IAF_SAPPHIRE_SHARD.get());
     }
 }
