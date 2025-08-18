@@ -17,7 +17,6 @@ import net.tysontheember.spelunkeryplus.item.ModItems;
 import net.tysontheember.spelunkeryplus.world.features.ModFeatures;
 import org.slf4j.Logger;
 import net.minecraftforge.fml.ModList;
-import net.tysontheember.spelunkeryplus.init.MMFeatures;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(SpelunkeryPlus.MODID)
@@ -164,6 +163,10 @@ public class SpelunkeryPlus
                 event.accept(ModBlocks.FA_DIORITE_ARCANE_CRYSTAL_ORE);
                 event.accept(ModBlocks.FA_TUFF_ARCANE_CRYSTAL_ORE);
                 event.accept(ModItems.FA_ROUGH_ARCANE_CRYSTAL);
+                event.accept(ModBlocks.FA_RUNIC_ANDESITE);
+                event.accept(ModBlocks.FA_RUNIC_GRANITE);
+                event.accept(ModBlocks.FA_RUNIC_DIORITE);
+                event.accept(ModBlocks.FA_RUNIC_TUFF);
             }
 
 

@@ -590,6 +590,76 @@ public class ModBlocks {
 
 
 
+    public static final BlockRegistryEntry<DropExperienceBlock> FA_RUNIC_ANDESITE =
+            ModList.get().isLoaded("forbidden_arcanus")
+                    ? HELPER.register(
+                            "fa_runic_andesite",
+                            () -> new DropExperienceBlock(
+                                    BlockBehaviour.Properties.of()
+                                            .mapColor(MapColor.STONE)
+                                            .instrument(NoteBlockInstrument.BASEDRUM)
+                                            .requiresCorrectToolForDrops()
+                                            .strength(3.0F),
+                                    UniformInt.of(2, 5)
+                            )
+                    )
+                    .withItem()
+                    .renderType(ValhelsiaRenderType.CUTOUT)
+                    : null;
+
+    public static final BlockRegistryEntry<DropExperienceBlock> FA_RUNIC_DIORITE =
+            ModList.get().isLoaded("forbidden_arcanus")
+                    ? HELPER.register(
+                            "fa_runic_diorite",
+                            () -> new DropExperienceBlock(
+                                    BlockBehaviour.Properties.of()
+                                            .mapColor(MapColor.STONE)
+                                            .instrument(NoteBlockInstrument.BASEDRUM)
+                                            .requiresCorrectToolForDrops()
+                                            .strength(3.0F),
+                                    UniformInt.of(2, 5)
+                            )
+                    )
+                    .withItem()
+                    .renderType(ValhelsiaRenderType.CUTOUT)
+                    : null;
+
+    public static final BlockRegistryEntry<DropExperienceBlock> FA_RUNIC_GRANITE =
+            ModList.get().isLoaded("forbidden_arcanus")
+                    ? HELPER.register(
+                            "fa_runic_granite",
+                            () -> new DropExperienceBlock(
+                                    BlockBehaviour.Properties.of()
+                                            .mapColor(MapColor.STONE)
+                                            .instrument(NoteBlockInstrument.BASEDRUM)
+                                            .requiresCorrectToolForDrops()
+                                            .strength(3.0F),
+                                    UniformInt.of(2, 5)
+                            )
+                    )
+                    .withItem()
+                    .renderType(ValhelsiaRenderType.CUTOUT)
+                    : null;
+
+    public static final BlockRegistryEntry<DropExperienceBlock> FA_RUNIC_TUFF =
+            ModList.get().isLoaded("forbidden_arcanus")
+                    ? HELPER.register(
+                            "fa_runic_tuff",
+                            () -> new DropExperienceBlock(
+                                    BlockBehaviour.Properties.of()
+                                            .mapColor(MapColor.STONE)
+                                            .instrument(NoteBlockInstrument.BASEDRUM)
+                                            .requiresCorrectToolForDrops()
+                                            .strength(3.0F),
+                                    UniformInt.of(2, 5)
+                            )
+                    )
+                    .withItem()
+                    .renderType(ValhelsiaRenderType.CUTOUT)
+                    : null;
+
+
+
     // Caverns and Chasms
     public static final RegistryObject<Block> CC_ANDESITE_SPINEL_ORE =
             ModList.get().isLoaded("caverns_and_chasms") ?

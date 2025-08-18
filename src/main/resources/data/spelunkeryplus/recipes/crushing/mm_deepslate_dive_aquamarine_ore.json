@@ -12,7 +12,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "spelunkeryplus:mm_deepslate_dive_aquamarine_ore"
+      "item": "miningmaster:deepslate_dive_aquamarine_ore"
     }
   ],
   "results": [

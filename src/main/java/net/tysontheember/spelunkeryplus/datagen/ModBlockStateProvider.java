@@ -17,7 +17,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
 
-        if (ModList.get().isLoaded("iceandfire")) {
+
             blockWithItem(ModBlocks.IAF_ROUGH_SAPPHIRE_BLOCK);
             blockWithItem(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE);
             blockWithItem(ModBlocks.IAF_DEEPSLATE_SAPPHIRE_ORE);
@@ -29,8 +29,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
             blockWithItem(ModBlocks.IAF_GRANITE_SILVER_ORE);
             blockWithItem(ModBlocks.IAF_DIORITE_SILVER_ORE);
             blockWithItem(ModBlocks.IAF_TUFF_SILVER_ORE);
-        }
-        if (ModList.get().isLoaded("miningmaster")) {
+
+
             blockWithItem(ModBlocks.MM_RAW_AIR_MALACHITE_BLOCK);
             blockWithItem(ModBlocks.MM_RAW_DIVE_AQUAMARINE_BLOCK);
             blockWithItem(ModBlocks.MM_RAW_DIVINE_BERYL_BLOCK);
@@ -84,8 +84,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
             blockWithItem(ModBlocks.MM_TUFF_SPIDER_KUNZITE_ORE);
             blockWithItem(ModBlocks.MM_TUFF_SPIRIT_GARNET_ORE);
             blockWithItem(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE);
-        }
-        if (ModList.get().isLoaded("caverns_and_chasms")) {
+
+
             blockWithItem(ModBlocks.CC_ANDESITE_SPINEL_ORE);
             blockWithItem(ModBlocks.CC_GRANITE_SPINEL_ORE);
             blockWithItem(ModBlocks.CC_DIORITE_SPINEL_ORE);
@@ -96,7 +96,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
             blockWithItem(ModBlocks.CC_GRANITE_SILVER_ORE);
             blockWithItem(ModBlocks.CC_DIORITE_SILVER_ORE);
             blockWithItem(ModBlocks.CC_TUFF_SILVER_ORE);
-        }
+
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject){

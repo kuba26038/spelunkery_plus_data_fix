@@ -12,7 +12,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "spelunkeryplus:mm_deepslate_spider_kunzite_ore"
+      "item": "miningmaster:deepslate_spider_kunzite_ore"
     }
   ],
   "results": [

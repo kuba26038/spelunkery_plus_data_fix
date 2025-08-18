@@ -12,7 +12,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "spelunkeryplus:mm_deepslate_air_malachite_ore"
+      "item": "miningmaster:deepslate_air_malachite_ore"
     }
   ],
   "results": [

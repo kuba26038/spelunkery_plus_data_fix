@@ -12,7 +12,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "spelunkeryplus:mm_deepslate_fire_ruby_ore"
+      "item": "miningmaster:deepslate_fire_ruby_ore"
     }
   ],
   "results": [

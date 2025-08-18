@@ -12,7 +12,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "spelunkeryplus:mm_deepslate_divine_beryl_ore"
+      "item": "miningmaster:deepslate_divine_beryl_ore"
     }
   ],
   "results": [

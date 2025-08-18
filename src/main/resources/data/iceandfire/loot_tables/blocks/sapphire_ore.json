@@ -16,7 +16,7 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "spelunkery:andesite_zinc_ore",
+              "name": "iceandfire:sapphire_ore",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -35,7 +35,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "spelunkeryplus:rough_sapphire",
+              "name": "spelunkeryplus:iaf_rough_sapphire",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",

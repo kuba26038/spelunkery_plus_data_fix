@@ -8,7 +8,6 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootPool;
@@ -21,7 +20,6 @@ import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.MatchTool;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
-import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.RegistryObject;
 import net.tysontheember.spelunkeryplus.block.ModBlocks;
 import net.tysontheember.spelunkeryplus.item.ModItems;
@@ -35,7 +33,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        if (ModList.get().isLoaded("iceandfire")) {
             this.dropSelf(ModBlocks.IAF_ROUGH_SAPPHIRE_BLOCK.get());
 
             this.add(ModBlocks.IAF_ANDESITE_SAPPHIRE_ORE.get(),
@@ -69,9 +66,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
             this.add(ModBlocks.IAF_DIORITE_SILVER_ORE.get(),
                     block -> createOreDrop(ModBlocks.IAF_DIORITE_SILVER_ORE.get(),
                             BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:raw_silver"))));
-        }
 
-        if (ModList.get().isLoaded("miningmaster")) {
             this.dropSelf(ModBlocks.MM_RAW_AIR_MALACHITE_BLOCK.get());
             this.dropSelf(ModBlocks.MM_RAW_DIVE_AQUAMARINE_BLOCK.get());
             this.dropSelf(ModBlocks.MM_RAW_DIVINE_BERYL_BLOCK.get());
@@ -163,9 +158,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                     block -> createOreDrop(ModBlocks.MM_TUFF_SPIRIT_GARNET_ORE.get(), ModItems.MM_RAW_SPIRIT_GARNET.get()));
             this.add(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE.get(),
                     block -> createOreDrop(ModBlocks.MM_TUFF_UNBREAKING_IOLITE_ORE.get(), ModItems.MM_RAW_UNBREAKING_IOLITE.get()));
-    }
 
-        if (ModList.get().isLoaded("caverns_and_chasms")) {
+
             this.dropSelf(ModBlocks.CC_ROUGH_SPINEL_BLOCK.get());
             this.add(ModBlocks.CC_ANDESITE_SPINEL_ORE.get(),
                     block -> createOreDrop(ModBlocks.CC_ANDESITE_SPINEL_ORE.get(), ModItems.CC_ROUGH_SPINEL.get()));
@@ -184,7 +178,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                     block -> createOreDrop(ModBlocks.CC_DIORITE_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:raw_silver"))));
             this.add(ModBlocks.CC_TUFF_SILVER_ORE.get(),
                     block -> createOreDrop(ModBlocks.CC_TUFF_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:raw_silver"))));
-        }
+
 
 
 
@@ -203,7 +197,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 )
         );
 
-        // === First Pool: main drop (block or rough sapphire) ===
+        // Pool 1: Either the block (with Silk Touch) or the main drop (no Silk Touch)
         LootPool.Builder mainPool = LootPool.lootPool()
                 .setRolls(ConstantValue.exactly(1))
                 .add(AlternativesEntry.alternatives(
@@ -214,21 +208,20 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                         )
                 ));
 
-        // === Second Pool: bonus drop (air or shards) ===
+        // Pool 2: Only add shards when Silk Touch is NOT present (no "air" entry)
         LootPool.Builder shardPool = LootPool.lootPool()
                 .setRolls(ConstantValue.exactly(1))
-                .add(AlternativesEntry.alternatives(
-                        LootItem.lootTableItem(Items.AIR).when(silkTouch),
-                        this.applyExplosionDecay(block,
-                                LootItem.lootTableItem(shardDrop)
-                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 2.0F)))
-                                        .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))
-                        )
+                .add(this.applyExplosionDecay(block,
+                        LootItem.lootTableItem(shardDrop)
+                                .when(silkTouch.invert())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 2.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))
                 ));
 
         return LootTable.lootTable()
                 .withPool(mainPool)
                 .withPool(shardPool);
     }
+
 
 }

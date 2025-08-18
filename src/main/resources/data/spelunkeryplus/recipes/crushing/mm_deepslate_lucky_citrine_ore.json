@@ -12,7 +12,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "spelunkeryplus:mm_deepslate_lucky_citrine_ore"
+      "item": "miningmaster:deepslate_lucky_citrine_ore"
     }
   ],
   "results": [

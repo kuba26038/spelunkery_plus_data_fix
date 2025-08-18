@@ -167,7 +167,7 @@ dependencies {
     implementation fg.deobf("curse.maven:forbidden-arcanus-309858:5198323")
     implementation fg.deobf("curse.maven:citadel-331936:5075402")
     implementation fg.deobf("curse.maven:ice-and-fire-dragons-264231:5122408")
-
+    implementation fg.deobf("curse.maven:cofh-core-69162:5374122")
     implementation fg.deobf("curse.maven:embeddium-908741:5681725")
     implementation fg.deobf("curse.maven:magnesium-extras-558905:6041697")
     implementation fg.deobf("curse.maven:create-328085:6641603")
@@ -175,7 +175,7 @@ dependencies {
 
 
     implementation fg.deobf("curse.maven:world-stripper-250603:4578579")
-
+    implementation fg.deobf("curse.maven:mining-master-534956:5540513")
 //    implementation fg.deobf("curse.maven:mining-master-534956:5540513")
 
 

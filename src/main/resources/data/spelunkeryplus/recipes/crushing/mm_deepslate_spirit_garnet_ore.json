@@ -12,7 +12,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "spelunkeryplus:mm_deepslate_spirit_garnet_ore"
+      "item": "miningmaster:deepslate_spirit_garnet_ore"
     }
   ],
   "results": [

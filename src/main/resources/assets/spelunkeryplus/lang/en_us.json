@@ -103,5 +103,9 @@
   "block.forbidden_arcanus.fa_diorite_arcane_crystal_ore": "Diorite Arcane Crystal Ore",
   "block.forbidden_arcanus.fa_granite_arcane_crystal_ore": "Granite Arcane Crystal Ore",
   "block.forbidden_arcanus.fa_tuff_arcane_crystal_ore": "Tuff Arcane Crystal Ore",
-  "item.spelunkeryplus.fa_rough_arcane_crystal": "Rough Arcane Crystal"
+  "item.spelunkeryplus.fa_rough_arcane_crystal": "Rough Arcane Crystal",
+  "block.forbidden_arcanus.fa_runic_andesite": "Runic Andesite",
+  "block.forbidden_arcanus.fa_runic_diorite": "Runic Diorite",
+  "block.forbidden_arcanus.fa_runic_granite": "Runic Granite",
+  "block.forbidden_arcanus.fa_runic_tuff": "Runic Tuff"
 }

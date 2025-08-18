@@ -18,34 +18,29 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        if (ModList.get().isLoaded("iceandfire")) {
-            simpleItem(ModItems.IAF_ROUGH_SAPPHIRE);
-            simpleItem(ModItems.IAF_SAPPHIRE_SHARD);
-            simpleItem(ModItems.IAF_ROUGH_SAPPHIRE_SHARD);
-        }
-        if (ModList.get().isLoaded("miningmaster")) {
-            simpleItem(ModItems.MM_RAW_AIR_MALACHITE);
-            simpleItem(ModItems.MM_RAW_DIVE_AQUAMARINE);
-            simpleItem(ModItems.MM_RAW_DIVINE_BERYL);
-            simpleItem(ModItems.MM_RAW_FIRE_RUBY);
-            simpleItem(ModItems.MM_RAW_HASTE_PERIDOT);
-            simpleItem(ModItems.MM_RAW_HEART_RHODONITE);
-            simpleItem(ModItems.MM_RAW_ICE_SAPPHIRE);
-            simpleItem(ModItems.MM_RAW_KINETIC_OPAL);
-            simpleItem(ModItems.MM_RAW_LUCKY_CITRINE);
-            simpleItem(ModItems.MM_RAW_POWER_PYRITE);
-            simpleItem(ModItems.MM_RAW_SPIDER_KUNZITE);
-            simpleItem(ModItems.MM_RAW_SPIRIT_GARNET);
-            simpleItem(ModItems.MM_RAW_UNBREAKING_IOLITE);
-        }
-        if (ModList.get().isLoaded("caverns_and_chasms")) {
-            simpleItem(ModItems.CC_ROUGH_SPINEL_SHARD);
-            simpleItem(ModItems.CC_ROUGH_SPINEL);
-            simpleItem(ModItems.CC_SPINEL_SHARD);
-        }
-        if (ModList.get().isLoaded("forbidden_arcanus")) {
-            simpleItem(ModItems.FA_ROUGH_ARCANE_CRYSTAL);
-        }
+        simpleItem(ModItems.IAF_ROUGH_SAPPHIRE);
+        simpleItem(ModItems.IAF_SAPPHIRE_SHARD);
+        simpleItem(ModItems.IAF_ROUGH_SAPPHIRE_SHARD);
+
+        simpleItem(ModItems.MM_RAW_AIR_MALACHITE);
+        simpleItem(ModItems.MM_RAW_DIVE_AQUAMARINE);
+        simpleItem(ModItems.MM_RAW_DIVINE_BERYL);
+        simpleItem(ModItems.MM_RAW_FIRE_RUBY);
+        simpleItem(ModItems.MM_RAW_HASTE_PERIDOT);
+        simpleItem(ModItems.MM_RAW_HEART_RHODONITE);
+        simpleItem(ModItems.MM_RAW_ICE_SAPPHIRE);
+        simpleItem(ModItems.MM_RAW_KINETIC_OPAL);
+        simpleItem(ModItems.MM_RAW_LUCKY_CITRINE);
+        simpleItem(ModItems.MM_RAW_POWER_PYRITE);
+        simpleItem(ModItems.MM_RAW_SPIDER_KUNZITE);
+        simpleItem(ModItems.MM_RAW_SPIRIT_GARNET);
+        simpleItem(ModItems.MM_RAW_UNBREAKING_IOLITE);
+
+        simpleItem(ModItems.CC_ROUGH_SPINEL_SHARD);
+        simpleItem(ModItems.CC_ROUGH_SPINEL);
+        simpleItem(ModItems.CC_SPINEL_SHARD);
+
+        simpleItem(ModItems.FA_ROUGH_ARCANE_CRYSTAL);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
