@@ -45,11 +45,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
 
             String[] mmBlocks = new String[]{
-                    "mm_raw_air_malachite_block", "mm_raw_dive_aquamarine_block", "mm_raw_divine_beryl_block",
-                    "mm_raw_fire_ruby_block", "mm_raw_haste_peridot_block", "mm_raw_heart_rhodonite_block",
-                    "mm_raw_ice_sapphire_block", "mm_raw_kinetic_opal_block", "mm_raw_lucky_citrine_block",
-                    "mm_raw_power_pyrite_block", "mm_raw_spider_kunzite_block", "mm_raw_spirit_garnet_block",
-                    "mm_raw_unbreaking_iolite_block"
+                    "mm_rough_air_malachite_block", "mm_rough_dive_aquamarine_block", "mm_rough_divine_beryl_block",
+                    "mm_rough_fire_ruby_block", "mm_rough_haste_peridot_block", "mm_rough_heart_rhodonite_block",
+                    "mm_rough_ice_sapphire_block", "mm_rough_kinetic_opal_block", "mm_rough_lucky_citrine_block",
+                    "mm_rough_power_pyrite_block", "mm_rough_spider_kunzite_block", "mm_rough_spirit_garnet_block",
+                    "mm_rough_unbreaking_iolite_block"
             };
             for (String blockId : mmBlocks) {
                 this.tag(BlockTags.MINEABLE_WITH_PICKAXE).addOptional(new ResourceLocation("spelunkeryplus", blockId));
