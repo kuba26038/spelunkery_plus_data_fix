@@ -85,12 +85,20 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
 
             String[] ccOres = new String[]{
-                    "cc_andesite_silver_ore", "cc_diorite_silver_ore", "cc_granite_silver_ore", "cc_tuff_silver_ore",
-                    "cc_andesite_spinel_ore", "cc_diorite_spinel_ore", "cc_granite_spinel_ore", "cc_tuff_spinel_ore"
+                    "cc_andesite_silver_ore", "cc_diorite_silver_ore", "cc_granite_silver_ore", "cc_tuff_silver_ore"
             };
             for (String blockId : ccOres) {
                 this.tag(BlockTags.MINEABLE_WITH_PICKAXE).addOptional(new ResourceLocation("spelunkeryplus", blockId));
                 this.tag(BlockTags.NEEDS_IRON_TOOL).addOptional(new ResourceLocation("spelunkeryplus", blockId));
+                this.tag(ORES_TAG).addOptional(new ResourceLocation("spelunkeryplus", blockId));
+                this.tag(ORES_TAG).addOptional(new ResourceLocation("spelunkeryplus", blockId));
+            }
+            String[] ccOresStone = new String[]{
+                    "cc_andesite_spinel_ore", "cc_diorite_spinel_ore", "cc_granite_spinel_ore", "cc_tuff_spinel_ore"
+            };
+            for (String blockId : ccOresStone) {
+                this.tag(BlockTags.MINEABLE_WITH_PICKAXE).addOptional(new ResourceLocation("spelunkeryplus", blockId));
+                this.tag(BlockTags.NEEDS_STONE_TOOL).addOptional(new ResourceLocation("spelunkeryplus", blockId));
                 this.tag(ORES_TAG).addOptional(new ResourceLocation("spelunkeryplus", blockId));
                 this.tag(ORES_TAG).addOptional(new ResourceLocation("spelunkeryplus", blockId));
             }
@@ -99,12 +107,20 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
             String[] iafOres = new String[]{
                     "iaf_granite_sapphire_ore", "iaf_andesite_sapphire_ore", "iaf_deepslate_sapphire_ore",
-                    "iaf_diorite_sapphire_ore", "iaf_tuff_sapphire_ore","iaf_andesite_silver_ore",
-                    "iaf_diorite_silver_ore", "iaf_granite_silver_ore", "iaf_tuff_silver_ore"
+                    "iaf_diorite_sapphire_ore", "iaf_tuff_sapphire_ore"
             };
             for (String blockId : iafOres) {
                 this.tag(BlockTags.MINEABLE_WITH_PICKAXE).addOptional(new ResourceLocation("spelunkeryplus", blockId));
                 this.tag(BlockTags.NEEDS_IRON_TOOL).addOptional(new ResourceLocation("spelunkeryplus", blockId));
+                this.tag(ORES_TAG).addOptional(new ResourceLocation("spelunkeryplus", blockId));
+                this.tag(ORES_TAG).addOptional(new ResourceLocation("spelunkeryplus", blockId));
+            }
+        String[] iafOresStone = new String[]{
+            "iaf_andesite_silver_ore", "iaf_diorite_silver_ore", "iaf_granite_silver_ore", "iaf_tuff_silver_ore"
+            };
+            for (String blockId : iafOresStone) {
+                this.tag(BlockTags.MINEABLE_WITH_PICKAXE).addOptional(new ResourceLocation("spelunkeryplus", blockId));
+                this.tag(BlockTags.NEEDS_STONE_TOOL).addOptional(new ResourceLocation("spelunkeryplus", blockId));
                 this.tag(ORES_TAG).addOptional(new ResourceLocation("spelunkeryplus", blockId));
                 this.tag(ORES_TAG).addOptional(new ResourceLocation("spelunkeryplus", blockId));
             }

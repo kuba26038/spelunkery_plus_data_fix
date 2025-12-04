@@ -53,19 +53,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
             this.add(ModBlocks.IAF_ANDESITE_SILVER_ORE.get(),
                     block -> createOreDrop(ModBlocks.IAF_ANDESITE_SILVER_ORE.get(),
-                            BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:ROUGH_silver"))));
+                            BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:rough_silver"))));
 
             this.add(ModBlocks.IAF_GRANITE_SILVER_ORE.get(),
                     block -> createOreDrop(ModBlocks.IAF_GRANITE_SILVER_ORE.get(),
-                            BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:ROUGH_silver"))));
+                            BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:rough_silver"))));
 
             this.add(ModBlocks.IAF_TUFF_SILVER_ORE.get(),
                     block -> createOreDrop(ModBlocks.IAF_TUFF_SILVER_ORE.get(),
-                            BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:ROUGH_silver"))));
+                            BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:rough_silver"))));
 
             this.add(ModBlocks.IAF_DIORITE_SILVER_ORE.get(),
                     block -> createOreDrop(ModBlocks.IAF_DIORITE_SILVER_ORE.get(),
-                            BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:ROUGH_silver"))));
+                            BuiltInRegistries.ITEM.get(new ResourceLocation("iceandfire:rough_silver"))));
 
             this.dropSelf(ModBlocks.MM_ROUGH_AIR_MALACHITE_BLOCK.get());
             this.dropSelf(ModBlocks.MM_ROUGH_DIVE_AQUAMARINE_BLOCK.get());
@@ -171,13 +171,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                     block -> createOreDrop(ModBlocks.CC_TUFF_SPINEL_ORE.get(), ModItems.CC_ROUGH_SPINEL.get()));
 
             this.add(ModBlocks.CC_ANDESITE_SILVER_ORE.get(),
-                    block -> createOreDrop(ModBlocks.CC_ANDESITE_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:ROUGH_silver"))));
+                    block -> createOreDrop(ModBlocks.CC_ANDESITE_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:rough_silver"))));
             this.add(ModBlocks.CC_GRANITE_SILVER_ORE.get(),
-                    block -> createOreDrop(ModBlocks.CC_GRANITE_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:ROUGH_silver"))));
+                    block -> createOreDrop(ModBlocks.CC_GRANITE_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:rough_silver"))));
             this.add(ModBlocks.CC_DIORITE_SILVER_ORE.get(),
-                    block -> createOreDrop(ModBlocks.CC_DIORITE_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:ROUGH_silver"))));
+                    block -> createOreDrop(ModBlocks.CC_DIORITE_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:rough_silver"))));
             this.add(ModBlocks.CC_TUFF_SILVER_ORE.get(),
-                    block -> createOreDrop(ModBlocks.CC_TUFF_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:ROUGH_silver"))));
+                    block -> createOreDrop(ModBlocks.CC_TUFF_SILVER_ORE.get(), BuiltInRegistries.ITEM.get(new ResourceLocation("caverns_and_chasms:rough_silver"))));
 
 
 
