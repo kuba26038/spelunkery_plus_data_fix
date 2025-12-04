@@ -14,7 +14,7 @@ import net.minecraftforge.registries.MissingMappingsEvent;
  * Remaps old Mining Master compat ids that used the raw_ prefix to their new rough_ counterparts.
  * Runs on the MOD event bus for both block and item registries.
  */
-@Mod.EventBusSubscriber(modid = SpelunkeryPlus.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = SpelunkeryPlus.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public final class MissingMappingsHandler {
     private static final String COMPAT_PREFIX = "mm_raw";
 
